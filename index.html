@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookmark.</title>
+</head>
+<body>
+<main>
+    <div class="box d-flex flex-column align-items-center container py-3">
+       
+        <h1>Bookmarker</h1>
+      
+        <div class="container bookmark my-4">
+        
+          <h2><i class="fa-solid fa-bookmark d-inline-block me-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-2"></i></h2>
+          <div class="container">
+            <form id="bookmarkForm">
+                <div class="row g-4">
+                    <div class="column">
+                        <div class="inner">
+                            <label for="nameInput" class="d-inline-block w-100 my-2">
+                                <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name
+                            </label>
+                            <input
+                             type="text" 
+                             id="nameInput" 
+                             placeholder="Bookmark Name"  
+                             class="form-control"
+                             value=""
+                             >
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inner">
+                            <label for="urlInput" class="d-inline-block w-100 my-2">
+                                <i class="fa-solid fa-link pe-2"></i>Site URL
+                            </label>
+                            <input 
+                            value=""
+                            type="url" id="urlInput" placeholder="Website URL" class="form-control">
+                            
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inner d-flex justify-content-center">
+                            <button id="addBtn" class="btn btn-submit px-4 py-2">Add Bookmark</button>
+                        </div>
+                    </div>
+                </div>
+              </form> 
+          </div>
+       
+        </div>
+    
+       
+          <table class="table mt-4 text-center bg-light">
+            <thead>
+              <tr>
+                <th class="text-capitalize">index</th>
+                <th class="text-capitalize">website name</th>
+                <th class="text-capitalize">visit</th>
+                <th class="text-capitalize">delete</th>
+              </tr>
+            </thead>
+            <tbody id="bookmarkList"></tbody>
+          </table>
+    </div>   
+ </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
