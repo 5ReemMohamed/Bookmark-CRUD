@@ -58,7 +58,7 @@ h1:hover::after{
 h2{
     text-align: center;
     font-family: "Righteous", sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     background-image: linear-gradient(to right, #3ca55c, #b5ac49);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -128,4 +128,7 @@ label{
     .box{
         max-width: 50%;
     }
+    h2{
+    font-size: 25px;
+}
 }
